@@ -25,7 +25,7 @@ Options:
 
 ```text
 $ dcwf -V
-dcwf 0.1.2
+dcwf 0.1.3
 ```
 
 # Examples
@@ -94,6 +94,8 @@ Fetching "https://public.cyber.mil/wf-element-sub/ai-data/"... saved to "data/el
   
 [`data`]: data
 [`data.json`]: data.json
+[`extended.json`]: extended.json
+[`extended-pretty.json`]: extended-pretty.json
 [`jq`]: https://jqlang.github.io/jq/
 [`pretty.json`]: pretty.json
 [DoD Cyber Workforce Framework]: https://public.cyber.mil/cw/dcwf/
