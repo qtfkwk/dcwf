@@ -55,7 +55,7 @@ Read from "data/elements/software-engineering.html"
 Read from "data/elements/ai-data.html"
 ```
 
-*See the result in [`pretty.json`].*
+*See the result in [`data-pretty.json`].*
 
 Use the `--extended` option to produced a non-deduplicated, non-interlinked data structure... e.g.
 roles are embeded in each element and KSATs are embedded in each role.
@@ -85,9 +85,9 @@ Fetching "https://public.cyber.mil/wf-element-sub/ai-data/"... saved to "data/el
   
 [`data`]: data
 [`data.json`]: data.json
+[`data-pretty.json`]: data-pretty.json
 [`extended.json`]: extended.json
 [`extended-pretty.json`]: extended-pretty.json
 [`jq`]: https://jqlang.github.io/jq/
-[`pretty.json`]: pretty.json
 [DoD Cyber Workforce Framework]: https://public.cyber.mil/cw/dcwf/
 

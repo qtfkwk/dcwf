@@ -9,7 +9,6 @@ use std::path::{Path, PathBuf};
 
 const BASE_URL: &str = "https://public.cyber.mil/wid/dcwf";
 const ELEMENTS_PATH: &str = "workforce-elements";
-const USER_AGENT: &str = "dcwf/1.0.0";
 
 //--------------------------------------------------------------------------------------------------
 
@@ -50,7 +49,11 @@ fn main() -> Result<()> {
 
     // User Agent
     let req_cli = reqwest::blocking::Client::builder()
-        .user_agent(USER_AGENT)
+        .user_agent(&format!(
+            "{}/{}",
+            std::env::var("CARGO_PKG_NAME").unwrap(),
+            std::env::var("CARGO_PKG_VERSION").unwrap(),
+        ))
         .build()?;
 
     // Selectors

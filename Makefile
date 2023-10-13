@@ -27,7 +27,7 @@ check:
 	cargo outdated --exit-code 1
 	cargo audit
 
-clean:
+clean: extra-clean
 	cargo clean
 	git clean -dxf
 
@@ -52,15 +52,18 @@ cocomo:
 
 extra: data.json data-pretty.json extended.json extended-pretty.json
 
-data.json: $(shell fd . data)
+extra-clean:
+	rm -f data.json data-pretty.json extended.json extended-pretty.json
+
+data.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- >$@
 
-data-pretty.json: $(shell fd . data)
+data-pretty.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- -f json-pretty >$@
 
-extended.json: $(shell fd . data)
+extended.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- --extended >$@
 
-extended-pretty.json: $(shell fd . data)
+extended-pretty.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- --extended -f json-pretty >$@
 
