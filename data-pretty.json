@@ -4,7 +4,7 @@
       "name": "IT (Cyberspace)",
       "url": "https://public.cyber.mil/wf-element-sub/it-cyberspace/",
       "id": "it-cyberspace",
-      "role_ids": [
+      "roles": [
         "421",
         "651",
         "431",
@@ -21,7 +21,7 @@
       "name": "Cybersecurity",
       "url": "https://public.cyber.mil/wf-element-sub/cybersecurity/",
       "id": "cybersecurity",
-      "role_ids": [
+      "roles": [
         "611",
         "723",
         "462",
@@ -41,7 +41,7 @@
       "name": "Cyberspace Effects",
       "url": "https://public.cyber.mil/wf-element-sub/cyberspace-effects/",
       "id": "cyberspace-effects",
-      "role_ids": [
+      "roles": [
         "332",
         "121",
         "112",
@@ -55,7 +55,7 @@
       "name": "Intelligence (Cyberspace)",
       "url": "https://public.cyber.mil/wf-element-sub/intelligence-cyberspace/",
       "id": "intelligence-cyberspace",
-      "role_ids": [
+      "roles": [
         "111",
         "311",
         "312",
@@ -67,7 +67,7 @@
       "name": "Acquisition",
       "url": "https://public.cyber.mil/wf-element-sub/acquisition/",
       "id": "acquisition",
-      "role_ids": [
+      "roles": [
         "804",
         "805",
         "802",
@@ -79,7 +79,7 @@
       "name": "Leadership",
       "url": "https://public.cyber.mil/wf-element-sub/leadership/",
       "id": "leadership",
-      "role_ids": [
+      "roles": [
         "752",
         "751",
         "901",
@@ -90,7 +90,7 @@
       "name": "Legal/Law Enforcement",
       "url": "https://public.cyber.mil/wf-element-sub/legal-law-enforcement/",
       "id": "legal-law-enforcement",
-      "role_ids": [
+      "roles": [
         "221",
         "731",
         "211"
@@ -100,7 +100,7 @@
       "name": "Training and Education",
       "url": "https://public.cyber.mil/wf-element-sub/training-and-education/",
       "id": "training-and-education",
-      "role_ids": [
+      "roles": [
         "711",
         "712"
       ]
@@ -109,7 +109,7 @@
       "name": "Software Engineering",
       "url": "https://public.cyber.mil/wf-element-sub/software-engineering/",
       "id": "software-engineering",
-      "role_ids": [
+      "roles": [
         "627",
         "625",
         "806",
@@ -124,7 +124,7 @@
       "name": "AI/Data",
       "url": "https://public.cyber.mil/wf-element-sub/ai-data/",
       "id": "ai-data",
-      "role_ids": [
+      "roles": [
         "753",
         "902",
         "733",

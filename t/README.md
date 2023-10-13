@@ -41,7 +41,7 @@ Read from "data/elements/ai-data.html"
 Use any other tools you want to process the JSON (like [`jq`]...).
 
 ```text
-$ dcwf -f json-pretty >pretty.json
+$ dcwf -f json-pretty >data-pretty.json
 Read from "data/elements.html"
 Read from "data/elements/it-cyberspace.html"
 Read from "data/elements/cybersecurity.html"
@@ -56,6 +56,12 @@ Read from "data/elements/ai-data.html"
 ```
 
 *See the result in [`pretty.json`].*
+
+Use the `--extended` option to produced a non-deduplicated, non-interlinked data structure... e.g.
+roles are embeded in each element and KSATs are embedded in each role.
+See the [`extended.json`] and [`extended-pretty.json`] files, produced via
+`dcwf --extended >extended.json` and `dcwf --extended -f json-pretty >extended-pretty.json`,
+respectively.
 
 Delete the data directory and run again:
 

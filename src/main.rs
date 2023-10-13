@@ -23,6 +23,10 @@ struct Cli {
     /// Data directory
     #[arg(short, value_name = "PATH", default_value = "data")]
     directory: PathBuf,
+
+    /// Extended output (non-deduplicated)
+    #[arg(long)]
+    extended: bool,
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -206,19 +210,32 @@ fn main() -> Result<()> {
         }
 
         // Add roles to element
-        el.role_ids = role_ids;
+        el.roles = role_ids;
     }
 
-    let data = Data {
-        elements,
-        roles,
-        ksats,
-    };
+    if cli.extended {
+        let data = elements
+            .iter()
+            .map(|(k, v)| (k, v.extend(&roles, &ksats)))
+            .collect::<IndexMap<_, _>>();
 
-    match cli.format.as_str() {
-        "json" => println!("{}", serde_json::to_string(&data)?),
-        "json-pretty" => println!("{}", serde_json::to_string_pretty(&data)?),
-        _ => unreachable!(),
+        match cli.format.as_str() {
+            "json" => println!("{}", serde_json::to_string(&data)?),
+            "json-pretty" => println!("{}", serde_json::to_string_pretty(&data)?),
+            _ => unreachable!(),
+        }
+    } else {
+        let data = Data {
+            elements,
+            roles,
+            ksats,
+        };
+
+        match cli.format.as_str() {
+            "json" => println!("{}", serde_json::to_string(&data)?),
+            "json-pretty" => println!("{}", serde_json::to_string_pretty(&data)?),
+            _ => unreachable!(),
+        }
     }
 
     Ok(())
@@ -273,7 +290,7 @@ struct Element {
     name: String,
     url: String,
     id: String,
-    role_ids: Vec<String>,
+    roles: Vec<String>,
 }
 
 impl Element {
@@ -282,7 +299,24 @@ impl Element {
             name: name.to_string(),
             url: url.to_string(),
             id: url.split('/').nth(4).unwrap().to_string(),
-            role_ids: vec![],
+            roles: vec![],
+        }
+    }
+
+    fn extend(
+        &self,
+        roles: &IndexMap<String, Role>,
+        ksats: &IndexMap<String, Ksat>,
+    ) -> ElementExtended {
+        ElementExtended {
+            name: self.name.clone(),
+            url: self.url.clone(),
+            id: self.id.clone(),
+            roles: self
+                .roles
+                .iter()
+                .map(|x| roles.get(x).unwrap().extend(ksats))
+                .collect(),
         }
     }
 }
@@ -320,13 +354,56 @@ impl Role {
             additional_ksats: IndexSet::new(),
         }
     }
+
+    fn extend(&self, ksats: &IndexMap<String, Ksat>) -> RoleExtended {
+        RoleExtended {
+            name: self.name.clone(),
+            url: self.url.clone(),
+            id: self.id.clone(),
+            nist_id: self.nist_id.clone(),
+            name_id: self.name_id.clone(),
+            description: self.description.clone(),
+            core_ksats: self
+                .core_ksats
+                .iter()
+                .map(|x| ksats.get(x).unwrap().clone())
+                .collect(),
+            additional_ksats: self
+                .additional_ksats
+                .iter()
+                .map(|x| ksats.get(x).unwrap().clone())
+                .collect(),
+        }
+    }
+}
+
+//--------------------------------------------------------------------------------------------------
+
+#[derive(Clone, Debug, Serialize, Hash, Eq, PartialEq)]
+struct Ksat {
+    id: String,
+    description: String,
+    kind: String,
 }
 
 //--------------------------------------------------------------------------------------------------
 
 #[derive(Clone, Debug, Serialize)]
-struct Ksat {
+struct ElementExtended {
+    name: String,
+    url: String,
     id: String,
+    roles: Vec<RoleExtended>,
+}
+
+#[derive(Clone, Debug, Serialize)]
+struct RoleExtended {
+    name: String,
+    url: String,
+    id: String,
+    nist_id: Option<String>,
+    name_id: String,
     description: String,
-    kind: String,
+    core_ksats: IndexSet<Ksat>,
+    additional_ksats: IndexSet<Ksat>,
 }

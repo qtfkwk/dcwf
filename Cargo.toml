@@ -1,6 +1,6 @@
 [package]
 name = "dcwf"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Utility to fetch raw JSON data from the DoD Cyber Workforce Framework"
 license = "MIT"

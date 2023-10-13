@@ -18,13 +18,14 @@ Usage: dcwf [OPTIONS]
 Options:
   -f <FORMAT>      Output format (json, json-pretty) [default: json]
   -d <PATH>        Data directory [default: data]
+      --extended   Extended output (non-deduplicated)
   -h, --help       Print help
   -V, --version    Print version
 ```
 
 ```text
 $ dcwf -V
-dcwf 0.1.1
+dcwf 0.1.2
 ```
 
 # Examples
@@ -49,7 +50,7 @@ Read from "data/elements/ai-data.html"
 Use any other tools you want to process the JSON (like [`jq`]...).
 
 ```text
-$ dcwf -f json-pretty >pretty.json
+$ dcwf -f json-pretty >data-pretty.json
 Read from "data/elements.html"
 Read from "data/elements/it-cyberspace.html"
 Read from "data/elements/cybersecurity.html"
@@ -64,6 +65,12 @@ Read from "data/elements/ai-data.html"
 ```
 
 *See the result in [`pretty.json`].*
+
+Use the `--extended` option to produced a non-deduplicated, non-interlinked data structure... e.g.
+roles are embeded in each element and KSATs are embedded in each role.
+See the [`extended.json`] and [`extended-pretty.json`] files, produced via
+`dcwf --extended >extended.json` and `dcwf --extended -f json-pretty >extended-pretty.json`,
+respectively.
 
 Delete the data directory and run again:
 
