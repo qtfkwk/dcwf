@@ -3,6 +3,7 @@ use clap::Parser;
 use indexmap::{IndexMap, IndexSet};
 use scraper::{Html, Selector};
 use serde::Serialize;
+use std::fmt::Write;
 use std::path::{Path, PathBuf};
 
 //--------------------------------------------------------------------------------------------------
@@ -15,7 +16,7 @@ const ELEMENTS_PATH: &str = "workforce-elements";
 #[derive(Parser)]
 #[command(about, version, max_term_width = 80)]
 struct Cli {
-    /// Output format (json, json-pretty)
+    /// Output format (json, json-pretty, markdown)
     #[arg(short, default_value = "json")]
     format: String,
 
@@ -34,8 +35,15 @@ fn main() -> Result<()> {
     let cli = Cli::parse();
 
     // Output format
-    if !["json", "json-pretty"].contains(&cli.format.as_str()) {
+    if !["json", "json-pretty", "markdown"].contains(&cli.format.as_str()) {
         return Err(anyhow!(format!("Invalid output format: {:?}", cli.format)));
+    }
+
+    // Extended option conflicts with markdown output format
+    if cli.extended && cli.format == "markdown" {
+        return Err(anyhow!(
+            "Extended option conflicts with markdown output format",
+        ));
     }
 
     // Data directory
@@ -51,23 +59,28 @@ fn main() -> Result<()> {
     let req_cli = reqwest::blocking::Client::builder()
         .user_agent(&format!(
             "{}/{}",
-            std::env::var("CARGO_PKG_NAME").unwrap(),
-            std::env::var("CARGO_PKG_VERSION").unwrap(),
+            env!("CARGO_PKG_NAME"),
+            env!("CARGO_PKG_VERSION"),
         ))
         .build()?;
 
     // Selectors
-    let span_sel = Selector::parse("span.spec-area-title").unwrap();
-    let a_sel = Selector::parse("a").unwrap();
-    let header_sel = Selector::parse("div.new-accordion-header").unwrap();
-    let title_sel = Selector::parse("span.new-acc-title a").unwrap();
-    let meta_sel = Selector::parse("span.acc-meta").unwrap();
-    let desc_sel = Selector::parse("span.acc-desc p").unwrap();
-    let content_sel = Selector::parse("div.new-accordion-content").unwrap();
-    let col_sel = Selector::parse("div.col-md-6").unwrap();
-    let tr_sel = Selector::parse("tbody tr").unwrap();
-    let td_sel = Selector::parse("td").unwrap();
-    let p_sel = Selector::parse("p").unwrap();
+    let sel = [
+        ("span", "span.spec-area-title"),
+        ("a", "a"),
+        ("header", "div.new-accordion-header"),
+        ("title", "span.new-acc-title a"),
+        ("meta", "span.acc-meta"),
+        ("desc", "span.acc-desc p"),
+        ("content", "div.new-accordion-content"),
+        ("col", "div.col-md-6"),
+        ("tr", "tbody tr"),
+        ("td", "td"),
+        ("p", "p"),
+    ]
+    .iter()
+    .map(|(k, v)| (*k, Selector::parse(v).unwrap()))
+    .collect::<IndexMap<&str, Selector>>();
 
     // Elements page
 
@@ -80,9 +93,9 @@ fn main() -> Result<()> {
     let doc = Html::parse_document(&elements_html);
 
     let mut elements = doc
-        .select(&span_sel)
+        .select(&sel["span"])
         .map(|x| {
-            let a = x.select(&a_sel).next().unwrap();
+            let a = x.select(&sel["a"]).next().unwrap();
             let el = Element::new(&a.inner_html(), a.value().attr("href").unwrap());
             (el.id.clone(), el)
         })
@@ -108,27 +121,27 @@ fn main() -> Result<()> {
 
         // Extract the roles
         let role_ids = doc
-            .select(&header_sel)
+            .select(&sel["header"])
             .map(|x| {
-                let meta = x.select(&meta_sel).next().unwrap().inner_html();
+                let meta = x.select(&sel["meta"]).next().unwrap().inner_html();
 
                 let id = meta.strip_prefix("Work Role ID: ").unwrap();
                 let id = id[..id.find(' ').unwrap()].to_string();
 
                 if !roles.contains_key(&id) {
-                    let title = x.select(&title_sel).next().unwrap();
+                    let title = x.select(&sel["title"]).next().unwrap();
                     let nist_id = meta.split(' ').next_back().unwrap();
                     let nist_id = nist_id.strip_suffix(')').unwrap();
-                    let desc = x.select(&desc_sel).next().unwrap().inner_html();
+                    let desc = x.select(&sel["desc"]).next().unwrap().inner_html();
 
                     roles.insert(
                         id.clone(),
                         Role::new(
-                            &title.inner_html(),
+                            &clean(&title.inner_html()),
                             title.value().attr("href").unwrap(),
                             &id,
                             nist_id,
-                            &desc[..desc.find("<br>").unwrap_or(desc.len())],
+                            &clean(&desc[..desc.find("<br>").unwrap_or(desc.len())]),
                             &el.id,
                         ),
                     );
@@ -140,7 +153,7 @@ fn main() -> Result<()> {
 
         // KSATs
 
-        for (role_i, content) in doc.select(&content_sel).enumerate() {
+        for (role_i, content) in doc.select(&sel["content"]).enumerate() {
             // Each role
 
             let role_id = &role_ids[role_i];
@@ -148,23 +161,23 @@ fn main() -> Result<()> {
             let mut core_ksats = IndexSet::new();
             let mut addl_ksats = IndexSet::new();
 
-            for (col_i, col) in content.select(&col_sel).enumerate() {
+            for (col_i, col) in content.select(&sel["col"]).enumerate() {
                 // Each KSAT column (core, additional)
 
-                for tr in col.select(&tr_sel) {
+                for tr in col.select(&sel["tr"]) {
                     // Each KSAT
 
                     let mut id = None;
                     let mut description = None;
                     let mut kind = None;
 
-                    for (td_i, td) in tr.select(&td_sel).enumerate() {
+                    for (td_i, td) in tr.select(&sel["td"]).enumerate() {
                         // Each KSAT cell
 
                         if td_i == 0 {
-                            id = Some(td.select(&a_sel).next().unwrap().inner_html());
+                            id = Some(td.select(&sel["a"]).next().unwrap().inner_html());
                         } else if td_i == 1 {
-                            let s = td.select(&p_sel).next().unwrap().inner_html();
+                            let s = td.select(&sel["p"]).next().unwrap().inner_html();
                             if let Some(s) = s.strip_prefix("* ") {
                                 description = Some(clean(s));
                             } else {
@@ -216,7 +229,9 @@ fn main() -> Result<()> {
         el.roles = role_ids;
     }
 
-    if cli.extended {
+    if cli.extended || cli.format == "markdown" {
+        // Extended (non-deduplicated, non-interlinked)
+
         let data = elements
             .iter()
             .map(|(k, v)| (k, v.extend(&roles, &ksats)))
@@ -225,9 +240,12 @@ fn main() -> Result<()> {
         match cli.format.as_str() {
             "json" => println!("{}", serde_json::to_string(&data)?),
             "json-pretty" => println!("{}", serde_json::to_string_pretty(&data)?),
+            "markdown" => print!("{}", markdown(&data)?),
             _ => unreachable!(),
         }
     } else {
+        // Standard
+
         let data = Data {
             elements,
             roles,
@@ -274,7 +292,32 @@ fn mkdir(dir: PathBuf) -> Result<PathBuf> {
 //--------------------------------------------------------------------------------------------------
 
 fn clean(s: &str) -> String {
-    s.replace("&nbsp;", " ")
+    html_escape::decode_html_entities(s).to_string()
+}
+
+//--------------------------------------------------------------------------------------------------
+
+fn markdown(data: &IndexMap<&String, ElementExtended>) -> Result<String> {
+    let mut r = String::new();
+    for element in data.values() {
+        write!(r, "# {}\n\n", element.name)?;
+        for role in &element.roles {
+            write!(r, "## {}\n\n{}\n\n", role.name, role.description)?;
+            write!(r, "Core KSATs\n\nID | Description | KSAT\n---|---|---\n")?;
+            for ksat in &role.core_ksats {
+                write!(r, "{} | {} | {}\n", ksat.id, ksat.description, ksat.kind)?;
+            }
+            write!(
+                r,
+                "\nAdditional KSATs\n\nID | Description | KSAT\n---|---|---\n"
+            )?;
+            for ksat in &role.additional_ksats {
+                write!(r, "{} | {} | {}\n", ksat.id, ksat.description, ksat.kind)?;
+            }
+            write!(r, "\n")?;
+        }
+    }
+    Ok(r)
 }
 
 //--------------------------------------------------------------------------------------------------

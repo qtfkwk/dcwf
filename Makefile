@@ -50,16 +50,19 @@ cocomo:
 
 ###
 
-extra: data.json data-pretty.json extended.json extended-pretty.json
+extra: data.json data-pretty.json data.md extended.json extended-pretty.json
 
 extra-clean:
-	rm -f data.json data-pretty.json extended.json extended-pretty.json
+	rm -f data.json data-pretty.json data.md extended.json extended-pretty.json
 
 data.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- >$@
 
 data-pretty.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- -f json-pretty >$@
+
+data.md: $(shell fd -t f . data src) Cargo.toml Makefile
+	cargo run --release -- -f markdown >$@
 
 extended.json: $(shell fd -t f . data src) Cargo.toml Makefile
 	cargo run --release -- --extended >$@

@@ -5,7 +5,7 @@
 * Force fresh download by specifying a different directory or deleting the data directory
 * Extract elements, roles, and KSATs from the downloaded HTML pages
 * Transform to data structure (index, dedupe, interlink)
-* Print as JSON
+* Print as JSON or Markdown
 
 # Usage
 
@@ -40,24 +40,9 @@ Read from "data/elements/ai-data.html"
 
 Use any other tools you want to process the JSON (like [`jq`]...).
 
-```text
-$ dcwf -f json-pretty >data-pretty.json
-Read from "data/elements.html"
-Read from "data/elements/it-cyberspace.html"
-Read from "data/elements/cybersecurity.html"
-Read from "data/elements/cyberspace-effects.html"
-Read from "data/elements/intelligence-cyberspace.html"
-Read from "data/elements/acquisition.html"
-Read from "data/elements/leadership.html"
-Read from "data/elements/legal-law-enforcement.html"
-Read from "data/elements/training-and-education.html"
-Read from "data/elements/software-engineering.html"
-Read from "data/elements/ai-data.html"
-```
+Use `-f json-pretty` or `-f markdown` to generate [`data-pretty.json`] or [`data.md`], respectively.
 
-*See the result in [`data-pretty.json`].*
-
-Use the `--extended` option to produced a non-deduplicated, non-interlinked data structure... e.g.
+Use the `--extended` option to produce a non-deduplicated, non-interlinked data structure... e.g.
 roles are embeded in each element and KSATs are embedded in each role.
 See the [`extended.json`] and [`extended-pretty.json`] files, produced via
 `dcwf --extended >extended.json` and `dcwf --extended -f json-pretty >extended-pretty.json`,
@@ -85,6 +70,7 @@ Fetching "https://public.cyber.mil/wf-element-sub/ai-data/"... saved to "data/el
   
 [`data`]: data
 [`data.json`]: data.json
+[`data.md`]: data.md
 [`data-pretty.json`]: data-pretty.json
 [`extended.json`]: extended.json
 [`extended-pretty.json`]: extended-pretty.json

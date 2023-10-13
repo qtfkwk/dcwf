@@ -6,3 +6,4 @@
 * 0.1.3 (2023-10-13): Fix readme links
 * 0.1.4 (2023-10-13): Fix readme links and make file; tie user agent to `package.name` and
   `package.version` in `Cargo.toml`
+* 0.1.5 (2023-10-13): Add `markdown` output format; improve clean function; consolidate selectors

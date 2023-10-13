@@ -201,7 +201,7 @@
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           },
           {
@@ -638,17 +638,17 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -1217,18 +1217,18 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           }
         ]
       },
       {
-        "name": "Research &amp; Development Specialist",
+        "name": "Research & Development Specialist",
         "url": "https://public.cyber.mil/dcwf-work-role/research-development-specialist/",
         "id": "661",
         "nist_id": "SP-RD-001",
@@ -1434,12 +1434,12 @@
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           }
         ]
@@ -1781,22 +1781,22 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -1951,7 +1951,7 @@
           },
           {
             "id": "6430",
-            "description": "Knowledge of Test &amp; Evaluation processes.",
+            "description": "Knowledge of Test & Evaluation processes.",
             "kind": "Knowledge"
           },
           {
@@ -1961,12 +1961,12 @@
           },
           {
             "id": "6530",
-            "description": "Skill in designing and documenting overall program Test &amp; Evaluation strategies.",
+            "description": "Skill in designing and documenting overall program Test & Evaluation strategies.",
             "kind": "Skill"
           },
           {
             "id": "6580",
-            "description": "Skill in identifying Test &amp; Evaluation infrastructure (people, ranges, tools, instrumentation) requirements.",
+            "description": "Skill in identifying Test & Evaluation infrastructure (people, ranges, tools, instrumentation) requirements.",
             "kind": "Skill"
           },
           {
@@ -1976,12 +1976,12 @@
           },
           {
             "id": "6630",
-            "description": "Skill in preparing Test &amp; Evaluation reports.",
+            "description": "Skill in preparing Test & Evaluation reports.",
             "kind": "Skill"
           },
           {
             "id": "6641",
-            "description": "Skill in providing Test &amp; Evaluation resource estimate.",
+            "description": "Skill in providing Test & Evaluation resource estimate.",
             "kind": "Skill"
           },
           {
@@ -2265,7 +2265,7 @@
           },
           {
             "id": "63A",
-            "description": "Knowledge of information systems and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).",
+            "description": "Knowledge of information systems and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).",
             "kind": "Knowledge"
           },
           {
@@ -2400,12 +2400,12 @@
           },
           {
             "id": "181B",
-            "description": "Knowledge of how detection technologies are used to detect host and network-based intrusions.",
+            "description": "Knowledge of how detection technologies are used to detect host and network-based intrusions.",
             "kind": "Knowledge"
           },
           {
             "id": "191A",
-            "description": "Knowledge of development and application of security system access controls.",
+            "description": "Knowledge of development and application of security system access controls.",
             "kind": "Knowledge"
           },
           {
@@ -2430,7 +2430,7 @@
           },
           {
             "id": "416A",
-            "description": "Analyze design constraints, analyze trade-offs and security design, and consider lifecycle support.",
+            "description": "Analyze design constraints, analyze trade-offs and security design, and consider lifecycle support.",
             "kind": "Task"
           },
           {
@@ -2445,7 +2445,7 @@
           },
           {
             "id": "500B",
-            "description": "Design hardware, operating systems, or software applications to adequately address requirements.",
+            "description": "Design hardware, operating systems, or software applications to adequately address requirements.",
             "kind": "Task"
           },
           {
@@ -2460,7 +2460,7 @@
           },
           {
             "id": "516A",
-            "description": "Develop testing and validation procedures and documentation.",
+            "description": "Develop testing and validation procedures and documentation.",
             "kind": "Task"
           },
           {
@@ -2555,7 +2555,7 @@
           },
           {
             "id": "904A",
-            "description": "Knowledge of interpreted and compiled computer languages.",
+            "description": "Knowledge of interpreted and compiled computer languages.",
             "kind": "Knowledge"
           },
           {
@@ -2565,7 +2565,7 @@
           },
           {
             "id": "999C",
-            "description": "Collaborate with cybersecurity professionals to implement cybersecurity into designs to meet specific operational needs and environmental factors (e.g., access controls, automate d applications, networked operations, high integrity and availability requirements, multilevel security/processing of multiple classification levels, and processing Sensitive Compartmented Information).",
+            "description": "Collaborate with cybersecurity professionals to implement cybersecurity into designs to meet specific operational needs and environmental factors (e.g., access controls, automate d applications, networked operations, high integrity and availability requirements, multilevel security/processing of multiple classification levels, and processing Sensitive Compartmented Information).",
             "kind": "Task"
           },
           {
@@ -2610,7 +2610,7 @@
           },
           {
             "id": "1073B",
-            "description": "Knowledge of network systems management principles, models, methods (e.g., end-to-end systems performance monitoring), and tools.",
+            "description": "Knowledge of network systems management principles, models, methods (e.g., end-to-end systems performance monitoring), and tools.",
             "kind": "Knowledge"
           },
           {
@@ -2630,7 +2630,7 @@
           },
           {
             "id": "1152A",
-            "description": "Implement and integrate systems engineering methodologies into development environment.",
+            "description": "Implement and integrate systems engineering methodologies into development environment.",
             "kind": "Task"
           },
           {
@@ -2665,7 +2665,7 @@
           },
           {
             "id": "5200A",
-            "description": "Design, implement, assess, and evaluate secure interfaces between information systems, physical systems, and/or embedded technologies.",
+            "description": "Design, implement, assess, and evaluate secure interfaces between information systems, physical systems, and/or embedded technologies.",
             "kind": "Task"
           },
           {
@@ -2675,7 +2675,7 @@
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -3568,7 +3568,7 @@
           },
           {
             "id": "1146",
-            "description": "Develop and Implement cybersecurity independent audit processes for application software/networks/systems and oversee ongoing independent audits to ensure that operational and Research and Design (R&amp;D) processes and procedures are in compliance with organizational and mandatory cybersecurity requirements and accurately followed by Systems Administrators and other cybersecurity staff when performing their day-to-day activities.",
+            "description": "Develop and Implement cybersecurity independent audit processes for application software/networks/systems and oversee ongoing independent audits to ensure that operational and Research and Design (R&D) processes and procedures are in compliance with organizational and mandatory cybersecurity requirements and accurately followed by Systems Administrators and other cybersecurity staff when performing their day-to-day activities.",
             "kind": "Task"
           },
           {
@@ -3912,7 +3912,7 @@
           },
           {
             "id": "5830",
-            "description": "Implement Risk Management Framework (RMF) Assessment requirements for control systems, and document/maintain records for them.",
+            "description": "Implement Risk Management Framework (RMF) Assessment requirements for control systems, and document/maintain records for them.",
             "kind": "Task"
           },
           {
@@ -3972,7 +3972,7 @@
           },
           {
             "id": "6934",
-            "description": "Knowledge of RMF assessment types (e.g., Assess &amp; Authorize (A&amp;A), Assess Only) and authorization boundaries (e.g., Closed Restricted Network (CRN), Stand-alone Information System (SIS)).",
+            "description": "Knowledge of RMF assessment types (e.g., Assess & Authorize (A&A), Assess Only) and authorization boundaries (e.g., Closed Restricted Network (CRN), Stand-alone Information System (SIS)).",
             "kind": "Knowledge"
           },
           {
@@ -4479,7 +4479,7 @@
           },
           {
             "id": "922B",
-            "description": "Skill in using network analysis tools, including specialized tools for non-traditional systems and networks (e.g., control systems), to identify vulnerabilities.​",
+            "description": "Skill in using network analysis tools, including specialized tools for non-traditional systems and networks (e.g., control systems), to identify vulnerabilities.​",
             "kind": "Skill"
           },
           {
@@ -5720,22 +5720,22 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -6312,12 +6312,12 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           }
         ]
@@ -6734,7 +6734,7 @@
           },
           {
             "id": "598A",
-            "description": "Evaluate and approve development efforts to ensure that baseline security safeguards controls/measures are appropriately installed.​",
+            "description": "Evaluate and approve development efforts to ensure that baseline security safeguards controls/measures are appropriately installed.​",
             "kind": "Task"
           },
           {
@@ -6884,7 +6884,7 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           }
         ]
@@ -7893,22 +7893,22 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -8090,7 +8090,7 @@
           },
           {
             "id": "95B",
-            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Knowledge"
           },
           {
@@ -8230,7 +8230,7 @@
           },
           {
             "id": "1146",
-            "description": "Develop and Implement cybersecurity independent audit processes for application software/networks/systems and oversee ongoing independent audits to ensure that operational and Research and Design (R&amp;D) processes and procedures are in compliance with organizational and mandatory cybersecurity requirements and accurately followed by Systems Administrators and other cybersecurity staff when performing their day-to-day activities.",
+            "description": "Develop and Implement cybersecurity independent audit processes for application software/networks/systems and oversee ongoing independent audits to ensure that operational and Research and Design (R&D) processes and procedures are in compliance with organizational and mandatory cybersecurity requirements and accurately followed by Systems Administrators and other cybersecurity staff when performing their day-to-day activities.",
             "kind": "Task"
           }
         ]
@@ -8372,7 +8372,7 @@
           },
           {
             "id": "95B",
-            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Knowledge"
           },
           {
@@ -8412,7 +8412,7 @@
           },
           {
             "id": "225A",
-            "description": "Skill in the use of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Skill in the use of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Skill"
           },
           {
@@ -8452,7 +8452,7 @@
           },
           {
             "id": "922B",
-            "description": "Skill in using network analysis tools, including specialized tools for non-traditional systems and networks (e.g., control systems), to identify vulnerabilities.​",
+            "description": "Skill in using network analysis tools, including specialized tools for non-traditional systems and networks (e.g., control systems), to identify vulnerabilities.​",
             "kind": "Skill"
           },
           {
@@ -8462,7 +8462,7 @@
           },
           {
             "id": "940B",
-            "description": "Perform technical (evaluation of technology) and non-technical (evaluation of people and operations) risk and vulnerability assessments of relevant technology focus areas (e.g., local computing environment, network and infrastructure, control system and operational environments, enclave boundary, supporting infrastructure, and applications).",
+            "description": "Perform technical (evaluation of technology) and non-technical (evaluation of people and operations) risk and vulnerability assessments of relevant technology focus areas (e.g., local computing environment, network and infrastructure, control system and operational environments, enclave boundary, supporting infrastructure, and applications).",
             "kind": "Task"
           },
           {
@@ -8537,7 +8537,7 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           }
         ]
@@ -16619,12 +16619,12 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           }
         ]
@@ -16831,22 +16831,22 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           }
         ]
@@ -17789,7 +17789,7 @@
           },
           {
             "id": "320A",
-            "description": "Knowledge of external organizations and academic institutions with cyber focus (e.g., cyber curriculum/training and Research &amp; Development).",
+            "description": "Knowledge of external organizations and academic institutions with cyber focus (e.g., cyber curriculum/training and Research & Development).",
             "kind": "Knowledge"
           },
           {
@@ -18001,7 +18001,7 @@
           },
           {
             "id": "320A",
-            "description": "Knowledge of external organizations and academic institutions with cyber focus (e.g., cyber curriculum/training and Research &amp; Development).",
+            "description": "Knowledge of external organizations and academic institutions with cyber focus (e.g., cyber curriculum/training and Research & Development).",
             "kind": "Knowledge"
           },
           {
@@ -19357,7 +19357,7 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           }
         ]
@@ -20305,7 +20305,7 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           }
         ]
@@ -20534,12 +20534,12 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           }
         ]
@@ -20891,7 +20891,7 @@
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           }
         ]
@@ -21035,7 +21035,7 @@
           },
           {
             "id": "225A",
-            "description": "Skill in the use of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Skill in the use of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Skill"
           },
           {
@@ -21609,7 +21609,7 @@
           },
           {
             "id": "225B",
-            "description": "Knowledge of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Knowledge of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Knowledge"
           },
           {
@@ -22058,7 +22058,7 @@
           },
           {
             "id": "95B",
-            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
+            "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
             "kind": "Knowledge"
           },
           {
@@ -22143,7 +22143,7 @@
           },
           {
             "id": "191A",
-            "description": "Knowledge of development and application of security system access controls.",
+            "description": "Knowledge of development and application of security system access controls.",
             "kind": "Knowledge"
           },
           {
@@ -22288,7 +22288,7 @@
           },
           {
             "id": "904A",
-            "description": "Knowledge of interpreted and compiled computer languages.",
+            "description": "Knowledge of interpreted and compiled computer languages.",
             "kind": "Knowledge"
           },
           {
@@ -22453,22 +22453,22 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
             "id": "6919",
-            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
+            "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
             "kind": "Ability"
           },
           {
             "id": "6942",
-            "description": "Skill in designing or implementing cloud computing deployment models.",
+            "description": "Skill in designing or implementing cloud computing deployment models.",
             "kind": "Skill"
           },
           {
             "id": "6945",
-            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
+            "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
             "kind": "Skill"
           },
           {
@@ -22479,7 +22479,7 @@
         ]
       },
       {
-        "name": "Software Test &amp; Evaluation Specialist",
+        "name": "Software Test & Evaluation Specialist",
         "url": "https://public.cyber.mil/dcwf-work-role/software-test-evaluation-specialist/",
         "id": "673",
         "nist_id": null,
@@ -22790,7 +22790,7 @@
           },
           {
             "id": "6430",
-            "description": "Knowledge of Test &amp; Evaluation processes.",
+            "description": "Knowledge of Test & Evaluation processes.",
             "kind": "Knowledge"
           },
           {
@@ -22800,12 +22800,12 @@
           },
           {
             "id": "6530",
-            "description": "Skill in designing and documenting overall program Test &amp; Evaluation strategies.",
+            "description": "Skill in designing and documenting overall program Test & Evaluation strategies.",
             "kind": "Skill"
           },
           {
             "id": "6580",
-            "description": "Skill in identifying Test &amp; Evaluation infrastructure (people, ranges, tools, instrumentation) requirements.",
+            "description": "Skill in identifying Test & Evaluation infrastructure (people, ranges, tools, instrumentation) requirements.",
             "kind": "Skill"
           },
           {
@@ -22815,12 +22815,12 @@
           },
           {
             "id": "6630",
-            "description": "Skill in preparing Test &amp; Evaluation reports.",
+            "description": "Skill in preparing Test & Evaluation reports.",
             "kind": "Skill"
           },
           {
             "id": "6641",
-            "description": "Skill in providing Test &amp; Evaluation resource estimate.",
+            "description": "Skill in providing Test & Evaluation resource estimate.",
             "kind": "Skill"
           },
           {
@@ -22830,7 +22830,7 @@
           },
           {
             "id": "7004A",
-            "description": "Knowledge of Test &amp; Evaluation frameworks.",
+            "description": "Knowledge of Test & Evaluation frameworks.",
             "kind": "Knowledge"
           },
           {
@@ -22870,7 +22870,7 @@
           },
           {
             "id": "7044",
-            "description": "Knowledge of testing, evaluation, validation, and verification (T&amp;E V&amp;V) tools and procedures to ensure systems are working as intended.",
+            "description": "Knowledge of testing, evaluation, validation, and verification (T&E V&V) tools and procedures to ensure systems are working as intended.",
             "kind": "Knowledge"
           },
           {
@@ -22880,7 +22880,7 @@
           },
           {
             "id": "7070A",
-            "description": "Skill in integrating software Test &amp; Evaluation frameworks into test strategies for specific projects.",
+            "description": "Skill in integrating software Test & Evaluation frameworks into test strategies for specific projects.",
             "kind": "Skill"
           },
           {
@@ -22900,7 +22900,7 @@
           },
           {
             "id": "7085",
-            "description": "Knowledge of software environments (e.g., development, testing, integration, production, etc.) and appropriate T&amp;E application in those environments.",
+            "description": "Knowledge of software environments (e.g., development, testing, integration, production, etc.) and appropriate T&E application in those environments.",
             "kind": "Knowledge"
           },
           {
@@ -23664,7 +23664,7 @@
           },
           {
             "id": "6918",
-            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
+            "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
             "kind": "Ability"
           },
           {
@@ -24346,7 +24346,7 @@
         ]
       },
       {
-        "name": "AI Risk &amp; Ethics Specialist",
+        "name": "AI Risk & Ethics Specialist",
         "url": "https://public.cyber.mil/dcwf-work-role/ai-risk-ethics-specialist/",
         "id": "733",
         "nist_id": null,
@@ -24547,7 +24547,7 @@
           },
           {
             "id": "7044",
-            "description": "Knowledge of testing, evaluation, validation, and verification (T&amp;E V&amp;V) tools and procedures to ensure systems are working as intended.",
+            "description": "Knowledge of testing, evaluation, validation, and verification (T&E V&V) tools and procedures to ensure systems are working as intended.",
             "kind": "Knowledge"
           },
           {
@@ -24608,7 +24608,7 @@
         ]
       },
       {
-        "name": "AI Test &amp; Evaluation Specialist",
+        "name": "AI Test & Evaluation Specialist",
         "url": "https://public.cyber.mil/dcwf-work-role/ai-test-evaluation-specialist/",
         "id": "672",
         "nist_id": null,
@@ -24834,12 +24834,12 @@
           },
           {
             "id": "6630",
-            "description": "Skill in preparing Test &amp; Evaluation reports.",
+            "description": "Skill in preparing Test & Evaluation reports.",
             "kind": "Skill"
           },
           {
             "id": "6641",
-            "description": "Skill in providing Test &amp; Evaluation resource estimate.",
+            "description": "Skill in providing Test & Evaluation resource estimate.",
             "kind": "Skill"
           },
           {
@@ -24849,7 +24849,7 @@
           },
           {
             "id": "7004",
-            "description": "Knowledge of AI Test &amp; Evaluation frameworks.",
+            "description": "Knowledge of AI Test & Evaluation frameworks.",
             "kind": "Knowledge"
           },
           {
@@ -24929,7 +24929,7 @@
           },
           {
             "id": "7044",
-            "description": "Knowledge of testing, evaluation, validation, and verification (T&amp;E V&amp;V) tools and procedures to ensure systems are working as intended.",
+            "description": "Knowledge of testing, evaluation, validation, and verification (T&E V&V) tools and procedures to ensure systems are working as intended.",
             "kind": "Knowledge"
           },
           {
@@ -24974,7 +24974,7 @@
           },
           {
             "id": "7070",
-            "description": "Skill in integrating AI Test &amp; Evaluation frameworks into test strategies for specific projects.",
+            "description": "Skill in integrating AI Test & Evaluation frameworks into test strategies for specific projects.",
             "kind": "Skill"
           },
           {
@@ -25286,7 +25286,7 @@
           },
           {
             "id": "7044",
-            "description": "Knowledge of testing, evaluation, validation, and verification (T&amp;E V&amp;V) tools and procedures to ensure systems are working as intended.",
+            "description": "Knowledge of testing, evaluation, validation, and verification (T&E V&V) tools and procedures to ensure systems are working as intended.",
             "kind": "Knowledge"
           },
           {
