@@ -24,7 +24,7 @@ Options:
 
 ```text
 $ dcwf -V
-dcwf 0.1.0
+dcwf 0.1.1
 ```
 
 # Examples

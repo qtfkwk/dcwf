@@ -6389,7 +6389,7 @@
     },
     "6945": {
       "id": "6945",
-      "description": "Skill in migrating workloads to, from, and among&nbsp;the different cloud computing service&nbsp;models.",
+      "description": "Skill in migrating workloads to, from, and among the different cloud computing service models.",
       "kind": "Skill"
     },
     "7029": {
@@ -6769,12 +6769,12 @@
     },
     "6918": {
       "id": "6918",
-      "description": "Ability to apply cybersecurity strategy to cloud&nbsp;computing service and&nbsp;deployment&nbsp;models,&nbsp;identifying&nbsp;proper architecture for different operating environments.",
+      "description": "Ability to apply cybersecurity strategy to cloud computing service and deployment models, identifying proper architecture for different operating environments.",
       "kind": "Ability"
     },
     "6942": {
       "id": "6942",
-      "description": "Skill in designing or implementing&nbsp;cloud computing&nbsp;deployment models.",
+      "description": "Skill in designing or implementing cloud computing deployment models.",
       "kind": "Skill"
     },
     "134": {
@@ -7154,7 +7154,7 @@
     },
     "6919": {
       "id": "6919",
-      "description": "Ability to determine the best cloud deployment&nbsp;model for the appropriate&nbsp;operating&nbsp;environment.",
+      "description": "Ability to determine the best cloud deployment model for the appropriate operating environment.",
       "kind": "Ability"
     },
     "88": {
@@ -7744,7 +7744,7 @@
     },
     "63A": {
       "id": "63A",
-      "description": "Knowledge of&nbsp;information systems&nbsp;and organizational requirements&nbsp;(relevant to confidentiality, integrity, availability, authentication, non-repudiation).",
+      "description": "Knowledge of information systems and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).",
       "kind": "Knowledge"
     },
     "75": {
@@ -7824,12 +7824,12 @@
     },
     "181B": {
       "id": "181B",
-      "description": "Knowledge&nbsp;of how detection technologies are used to detect&nbsp;host and network-based intrusions.",
+      "description": "Knowledge of how detection technologies are used to detect host and network-based intrusions.",
       "kind": "Knowledge"
     },
     "191A": {
       "id": "191A",
-      "description": "Knowledge of development and application of&nbsp;security system access controls.",
+      "description": "Knowledge of development and application of security system access controls.",
       "kind": "Knowledge"
     },
     "197": {
@@ -7849,7 +7849,7 @@
     },
     "416A": {
       "id": "416A",
-      "description": "Analyze design constraints, analyze trade-offs&nbsp;and security design, and consider lifecycle support.",
+      "description": "Analyze design constraints, analyze trade-offs and security design, and consider lifecycle support.",
       "kind": "Task"
     },
     "431A": {
@@ -7864,7 +7864,7 @@
     },
     "500B": {
       "id": "500B",
-      "description": "Design hardware, operating systems,&nbsp;or&nbsp;software applications&nbsp;to adequately address requirements.",
+      "description": "Design hardware, operating systems, or software applications to adequately address requirements.",
       "kind": "Task"
     },
     "501": {
@@ -7879,7 +7879,7 @@
     },
     "516A": {
       "id": "516A",
-      "description": "Develop&nbsp;testing and validation procedures and documentation.",
+      "description": "Develop testing and validation procedures and documentation.",
       "kind": "Task"
     },
     "527": {
@@ -7964,7 +7964,7 @@
     },
     "904A": {
       "id": "904A",
-      "description": "Knowledge of interpreted&nbsp;and compiled&nbsp;computer languages.",
+      "description": "Knowledge of interpreted and compiled computer languages.",
       "kind": "Knowledge"
     },
     "998A": {
@@ -7974,7 +7974,7 @@
     },
     "999C": {
       "id": "999C",
-      "description": "Collaborate with cybersecurity&nbsp;professionals to implement cybersecurity into&nbsp;designs to meet specific operational needs and environmental factors&nbsp;(e.g., access controls, automate d applications,&nbsp;networked operations, high integrity and availability requirements, multilevel&nbsp;security/processing of multiple classification levels, and processing Sensitive&nbsp;Compartmented Information).",
+      "description": "Collaborate with cybersecurity professionals to implement cybersecurity into designs to meet specific operational needs and environmental factors (e.g., access controls, automate d applications, networked operations, high integrity and availability requirements, multilevel security/processing of multiple classification levels, and processing Sensitive Compartmented Information).",
       "kind": "Task"
     },
     "999A": {
@@ -7999,12 +7999,12 @@
     },
     "1073B": {
       "id": "1073B",
-      "description": "Knowledge of&nbsp;network systems management principles, models, methods (e.g., end-to-end systems performance monitoring), and&nbsp;tools.",
+      "description": "Knowledge of network systems management principles, models, methods (e.g., end-to-end systems performance monitoring), and tools.",
       "kind": "Knowledge"
     },
     "1152A": {
       "id": "1152A",
-      "description": "Implement and integrate&nbsp;systems engineering methodologies into development environment.",
+      "description": "Implement and integrate systems engineering methodologies into development environment.",
       "kind": "Task"
     },
     "2354": {
@@ -8029,7 +8029,7 @@
     },
     "5200A": {
       "id": "5200A",
-      "description": "Design, implement,&nbsp;assess, and&nbsp;evaluate secure interfaces between information systems, physical systems,&nbsp;and/or embedded technologies.",
+      "description": "Design, implement, assess, and evaluate secure interfaces between information systems, physical systems, and/or embedded technologies.",
       "kind": "Task"
     },
     "5400": {
@@ -8599,7 +8599,7 @@
     },
     "5830": {
       "id": "5830",
-      "description": "Implement Risk Management Framework (RMF) Assessment requirements for control systems, and document/maintain records for&nbsp;them.",
+      "description": "Implement Risk Management Framework (RMF) Assessment requirements for control systems, and document/maintain records for them.",
       "kind": "Task"
     },
     "5831": {
@@ -8659,7 +8659,7 @@
     },
     "6934": {
       "id": "6934",
-      "description": "Knowledge of RMF assessment types (e.g., Assess &amp; Authorize (A&amp;A), Assess Only) and authorization boundaries (e.g., Closed Restricted Network (CRN),&nbsp;Stand-alone Information System (SIS)).",
+      "description": "Knowledge of RMF assessment types (e.g., Assess &amp; Authorize (A&amp;A), Assess Only) and authorization boundaries (e.g., Closed Restricted Network (CRN), Stand-alone Information System (SIS)).",
       "kind": "Knowledge"
     },
     "6937": {
@@ -8964,7 +8964,7 @@
     },
     "922B": {
       "id": "922B",
-      "description": "Skill in using network analysis tools,&nbsp;including&nbsp;specialized tools&nbsp;for non-traditional systems and&nbsp;networks (e.g.,&nbsp;control systems),&nbsp;to identify&nbsp;vulnerabilities.​",
+      "description": "Skill in using network analysis tools, including specialized tools for non-traditional systems and networks (e.g., control systems), to identify vulnerabilities.​",
       "kind": "Skill"
     },
     "938A": {
@@ -9974,7 +9974,7 @@
     },
     "598A": {
       "id": "598A",
-      "description": "Evaluate and approve development efforts to&nbsp;ensure that baseline security&nbsp;safeguards&nbsp;controls/measures&nbsp;are&nbsp;appropriately installed.​",
+      "description": "Evaluate and approve development efforts to ensure that baseline security safeguards controls/measures are appropriately installed.​",
       "kind": "Task"
     },
     "674": {
@@ -10409,7 +10409,7 @@
     },
     "95B": {
       "id": "95B",
-      "description": "Knowledge of penetration testing principles,&nbsp;tools, and techniques,&nbsp;including specialized tools&nbsp;for non-traditional systems and networks (e.g.,&nbsp;control systems).",
+      "description": "Knowledge of penetration testing principles, tools, and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
       "kind": "Knowledge"
     },
     "203": {
@@ -10499,7 +10499,7 @@
     },
     "225A": {
       "id": "225A",
-      "description": "Skill in the use of penetration testing tools and&nbsp;techniques,&nbsp;including specialized tools for non-traditional systems and networks (e.g., control systems).",
+      "description": "Skill in the use of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
       "kind": "Skill"
     },
     "226": {
@@ -10539,7 +10539,7 @@
     },
     "940B": {
       "id": "940B",
-      "description": "Perform technical (evaluation of technology) and non-technical (evaluation of people and operations) risk and vulnerability assessments of relevant technology focus areas (e.g., local computing environment, network and infrastructure, control system and operational&nbsp;environments, enclave boundary, supporting infrastructure, and applications).",
+      "description": "Perform technical (evaluation of technology) and non-technical (evaluation of people and operations) risk and vulnerability assessments of relevant technology focus areas (e.g., local computing environment, network and infrastructure, control system and operational environments, enclave boundary, supporting infrastructure, and applications).",
       "kind": "Task"
     },
     "941A": {
@@ -15719,7 +15719,7 @@
     },
     "225B": {
       "id": "225B",
-      "description": "Knowledge of penetration testing tools and&nbsp;techniques,&nbsp;including specialized tools for non-traditional systems and networks (e.g., control systems).",
+      "description": "Knowledge of penetration testing tools and techniques, including specialized tools for non-traditional systems and networks (e.g., control systems).",
       "kind": "Knowledge"
     },
     "863A": {

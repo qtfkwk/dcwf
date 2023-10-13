@@ -159,14 +159,14 @@ fn main() -> Result<()> {
                         } else if td_i == 1 {
                             let s = td.select(&p_sel).next().unwrap().inner_html();
                             if let Some(s) = s.strip_prefix("* ") {
-                                description = Some(s.to_string());
+                                description = Some(clean(s));
                             } else {
-                                description = Some(s);
+                                description = Some(clean(&s));
                             }
                         } else if td_i == 2 {
                             kind = Some(td.inner_html().trim().to_string());
                         } else {
-                            panic!("KSAT table should not have more than 3 columns");
+                            return Err(anyhow!("KSAT table should not have more than 3 columns"));
                         }
                     }
 
@@ -249,6 +249,12 @@ fn mkdir(dir: PathBuf) -> Result<PathBuf> {
         std::fs::create_dir(&dir)?;
     }
     Ok(dir)
+}
+
+//--------------------------------------------------------------------------------------------------
+
+fn clean(s: &str) -> String {
+    s.replace("&nbsp;", " ")
 }
 
 //--------------------------------------------------------------------------------------------------
